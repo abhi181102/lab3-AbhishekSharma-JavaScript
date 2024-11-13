@@ -7,7 +7,7 @@
     <title>Car ShowRoom</title>
   </head>
   <body>
-     <div class="container">
+    <div class="container">
       <h1>Car ShowRoom</h1>
       <label for="carSelect">Choose a Car Model:</label>
       <select id="carSelect">
@@ -18,5 +18,15 @@
         </option>
         <option value="Ford GT">2017 Ford GT</option>
       </select>
+      <label for="priceSelect">Choose a Price Range:</label>
+      <select id="priceSelect">
+        <option value="">Select a price range...</option>
+        <option value="50-100">$50 - $100</option>
+        <option value="115-160">$115 - $160</option>
+        <option value="165-200">$165 - $200</option>
+      </select>
+      <div id="carInfo"></div>
+      <div id="carImageContainer"></div>
+    </div>
   </body>
 </html>
