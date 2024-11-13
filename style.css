@@ -31,3 +31,21 @@ select {
   margin-bottom: 20px;
   width: 100%;
 }
+.car-details {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+.car-details h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.car-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.car-details td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
