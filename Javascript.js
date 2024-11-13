@@ -109,3 +109,14 @@ const toyCars = [
     "165-200"
   ),
 ];
+// Function to save changes to selected car's properties
+function saveChanges() {
+  if (window.selectedCar) {
+    // Update selected car properties with new input values
+    window.selectedCar.color = document.getElementById("colorInput").value;
+    window.selectedCar.priceRange = document.getElementById("priceInput").value;
+
+    // Refresh display with updated info
+    displayCarDetails();
+  }
+}
