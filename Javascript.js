@@ -66,3 +66,46 @@ function ToyCar(
     `;
   };
 }
+
+// Toy car data with price ranges
+const toyCars = [
+  new ToyCar(
+    "GT878-GT-YELLOW",
+    "680334723709",
+    "Chevrolet",
+    "Corvette C8-R #63",
+    "Yellow",
+    "After 2000",
+    "Retail Gift Box",
+    "1/18",
+    "Race Car",
+    "./Images/2021-Chevy-Corvette-.jpg",
+    "50-100"
+  ),
+  new ToyCar(
+    "US040-GT-WHITE",
+    "680334709697",
+    "Ford",
+    "Mustang GT MKII Track",
+    "White",
+    "After 2000",
+    "Retail Gift Box",
+    "1/18",
+    "Muscle Car",
+    "./Images/2020-Ford-GT-MKII.jpg",
+    "115-160"
+  ),
+  new ToyCar(
+    "GT097-GTS-WHITE",
+    "096647597669",
+    "Ford",
+    "Ford GT",
+    "White w/ Red",
+    "After 2000",
+    "Retail Gift Box",
+    "1/18",
+    "Collectible",
+    "./Images/GT-2017-Ford-GT-118.jpg",
+    "165-200"
+  ),
+];
