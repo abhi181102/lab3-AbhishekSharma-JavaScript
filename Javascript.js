@@ -120,3 +120,10 @@ function saveChanges() {
     displayCarDetails();
   }
 }
+// Event listeners for dropdown changes
+document
+  .getElementById("carSelect")
+  .addEventListener("change", displayCarDetails);
+document
+  .getElementById("priceSelect")
+  .addEventListener("change", displayCarDetails);
