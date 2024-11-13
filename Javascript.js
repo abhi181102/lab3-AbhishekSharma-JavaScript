@@ -109,6 +109,36 @@ const toyCars = [
     "165-200"
   ),
 ];
+
+// Function to display car details and image based on selections
+function displayCarDetails() {
+  const selectedModel = document.getElementById("carSelect").value;
+  const selectedPriceRange = document.getElementById("priceSelect").value;
+  const carInfoDiv = document.getElementById("carInfo");
+  const carImageContainer = document.getElementById("carImageContainer");
+
+  // Find the selected car model and price range in toyCars array
+  const selectedCar = toyCars.find(
+    (car) =>
+      car.model === selectedModel && car.priceRange === selectedPriceRange
+  );
+
+  if (selectedCar) {
+    // Display car information with editable fields
+    carInfoDiv.innerHTML = selectedCar.displayInfo();
+
+    // Display car image
+    carImageContainer.innerHTML = `<img src="${selectedCar.imageUrl}" alt="${selectedCar.model}">`;
+
+    // Store the currently selected car globally for saving changes
+    window.selectedCar = selectedCar;
+  } else {
+    carInfoDiv.innerHTML =
+      "<p>Please select both a car model and price range.</p>";
+    carImageContainer.innerHTML = "";
+  }
+}
+
 // Function to save changes to selected car's properties
 function saveChanges() {
   if (window.selectedCar) {
@@ -120,6 +150,7 @@ function saveChanges() {
     displayCarDetails();
   }
 }
+
 // Event listeners for dropdown changes
 document
   .getElementById("carSelect")

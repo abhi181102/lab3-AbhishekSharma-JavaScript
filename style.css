@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -11,6 +12,7 @@ body {
   height: 100vh;
   background-color: #f8f9fa;
 }
+
 .container {
   width: 80%;
   max-width: 600px;
@@ -20,40 +22,48 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
 }
+
 select {
   padding: 8px;
   font-size: 16px;
   margin-bottom: 20px;
   width: 100%;
 }
+
 .car-details {
   margin-top: 20px;
   font-size: 16px;
   text-align: left;
 }
+
 .car-details h2 {
   color: #333;
   margin-bottom: 10px;
 }
+
 .car-details table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
+
 .car-details td {
   padding: 8px;
   border: 1px solid #ddd;
 }
+
 .car-details td:first-child {
   font-weight: bold;
   width: 30%;
   color: #555;
 }
+
 #carImageContainer img {
   width: 100%;
   max-width: 300px;
